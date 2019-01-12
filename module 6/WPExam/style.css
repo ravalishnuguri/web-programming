@@ -1,0 +1,48 @@
+ /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+ .row.content {height: 550px}
+    
+ /* Set gray background color and 100% height */
+ .sidenav {
+   background-color: #f1f1f1;
+   height: 100%;
+ }
+     
+ /* On small screens, set height to 'auto' for the grid */
+ @media screen and (max-width: 767px) {
+   .row.content {height: auto;} 
+ }
+ .well1{
+     text-align: center;
+ }
+ .well2{
+    text-align: center;
+    color: rgb(73, 154, 230);
+}
+ 
+.image_inner_container img{
+    
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 5px solid rgba(75, 99, 231, 0.945);
+}
+.caption {
+    text-align: right;
+    color: rgb(73, 154, 230);
+}
+.text-align {
+    text-align: center;
+}
+#example2 {
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px #888888;
+  }
+
+  body {
+    background-image: url('Images/ba.jpg');
+    height: 100%;
+    width: 100%;
+    /* background-repeat: no-repeat; */
+    background-size: 100%, 100%; 
+}

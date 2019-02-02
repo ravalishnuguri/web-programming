@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mobile Cataloug</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script type="json" src="catalog.json"></script>
+    <script src="script.js"></script>
+</head>
+<body onload="dis()">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">BIGC</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Mobiles</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <div>
+    <h3 align="center">WELCOME TO ONLINE MOBILE CATALOUG</h3>
+</div>
+<hr>
+<div class="container">
+        <!-- <button type="button" class="btn btn-primary" id = 'welcome' align="center" onclick="dis()">Welcome</button> -->
+    <div class ="row">
+            <div class = "col-md-4 well" id = "mimage">
+                <!-- <div><p>photo</p></div> -->
+            </div>   
+            <div class = "col-md-8">
+                <div class="row ">
+                    <div class="col-md-12 well" id="mtitle">
+                        <!-- <p>asd</p> -->
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 well" id="mdescription">
+                        
+
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 well" id="mquantity">
+                        <!-- <p>10</p> -->
+                        
+                    </div>
+                </div>
+                
+                <div class = "row">
+                    <div class = "col-md-12 well" align = "right">
+                            <button type="button" class="btn btn-primary" id = 'delete' onclick="deleterow()">DELETE</button>
+                    </div>
+                </div>
+                <div class = "row">
+                        <div class = "col-md-12 well">
+                            <button type="button" class="btn btn-primary" id = 'edit' onclick = "editrow()">EDIT</button>
+                            <br>
+                            <form id = "form">
+                                title:<br>
+                                <input type="text" name="firstname"  id = "titletext" value="">
+                                <br>
+                                description:<br>
+                                <input type="text" name="lastname" id = "desctext" value="">
+                                <br>
+                                quantity:<br>
+                                <input type="text" name= "quantity" id = "noofquantitiy"value="">
+                                <br>
+                                <br>
+                                <input type="button" value="Submit" id = "newdetails" onclick = "hide()">
+                              </form>
+                        </div>
+                    </div>
+            </div>          
+        </div>
+        <hr>
+        <div class = "row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-primary" id = 'previous' onclick="prevpressed()">Previous</button>
+                </div>
+                <div class="col-md-6" align="right">
+                    <button type="button" class="btn btn-primary" id = 'next' onclick="nextpressed()">next</button>
+                </div>
+            </div>
+  </div>
+</body>
+</html>

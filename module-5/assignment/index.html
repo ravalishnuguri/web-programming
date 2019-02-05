@@ -8,70 +8,61 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src = "quiz.js"></script>
-        <link rel="stylesheet" href="style.css">
     </head>
-    <body onload="fun()">
+    <body>
         <div class = "main" ><h1><b>learn by doing</b></h1></div>
         <div class = "question">
         
             <div >
                 <p id = "quest"><b>1.Each computer has a built-in instruction set that it knows how to execute the design?</b></p>
             </div>
-            <button type="button" class="btn btn-warning" id = "h1" onclick="hint1()">Hint</button>
-                <div class="alert alert-warning" id = "hint1">
+                <div class="alert alert-warning">
                     
                     <a href="#" class="close" data-dismiss="alert">&times;</a>
                         <strong>Hint:</strong><p>Recall that we use the term computation to mean "the execution of a sequence of instructions by a computer with the intention of solving a given problem".</p>
                       </div>
             <form id = "quiz1" name = "quiz1">
-                    <input type="radio" id = "opt1" name = "question1" value="True" onclick="display1()" > True<br>
-                    <input type="radio" id = "opt2" name = "question1" value="False" onclick="display2()"> False<br>
+                    <input type="radio" id = "opt1" name = "question1" value="True" > True<br>
+                    <input type="radio" id = "opt2" name = "question1" value="False"> False<br>
+                    <input type="radio" id = "opt3" name = "question1" value="Maybe"> Maybe<br>
                     </form>
-                    <div class="alert alert-success" id = "op1">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>
-                        <strong>Correct:</strong><P>The answer is correct.</P>
-                      </div>
-            <div class="alert alert-danger" id = "op2">
+            <div class="alert alert-danger">
                     <a href="#" class="close" data-dismiss="alert">&times;</a>
                 <strong>Incorrect:</strong><p>Each computer has a set of primitive instructions that it is "wired" to execute. We call this the instruction set of the computer.</p>
             </div>
             <div><b>2.The computer uses intelligence to execute instructions.</b></div>
-            <button type="button" class="btn btn-warning" id = "h2" onclick="hint2()">Hint</button>
-            <div class="alert alert-warning" id = "hint2">
+            <!-- <div class="alert alert-warning">
                     <a href="#" class="close" data-dismiss="alert">&times;</a>
                     <strong>Hint:</strong><p>Recall that we said a computer executes the instructions given to it mechanically</p>
-                  </div>
+                  </div> -->
                   <form id = "quiz2" name = "quiz2">
-                    <input type="radio" id = "opt4" name = "question2" value="True" onclick="display3()"> True<br>
-                    <input type="radio" id = "opt5" name = "question2" value="False" onclick="display4()"> False<br>
+                    <input type="radio" id = "opt4" name = "question2" value="True" > True<br>
+                    <input type="radio" id = "opt5" name = "question2" value="False"> False<br>
+                    <input type="radio" id = "opt6" name = "question2" value="Maybe"> Maybe<br>
                     </form>
-                  <div class="alert alert-success" id = "op3">
+                  <div class="alert alert-success">
                         <a href="#" class="close" data-dismiss="alert">&times;</a>
                         <strong>Correct:</strong><P>A computer executes intructions automatically.ITs main task is to simply execute the instructions given to it.</P>
                       </div>
-                      <div class="alert alert-danger" id = "op4">
-                        <a href="#" class="close" data-dismiss="alert">&times;</a>
-                    <strong>Incorrect:</strong><p>The answer is correct.</p>
-                </div>
             <div><p><b>3.Is HTML, CSS,bootstrap are enough to create a interactive webpage?</b></p></div>
-            <button type="button" class="btn btn-warning" id = "h3" onclick="hint3()">Hint</button>
-                        <div class="alert alert-warning" id = "hint3">
+                        <div class="alert alert-warning">
                                 <a href="#" class="close" data-dismiss="alert">&times;</a>
                                 <strong>Hint:</strong><p>Recall the points from w3 school inorder to answer the question.</p>
                         </div>
                         <form id="quiz3" name = "quiz3">
-                              <input type="radio" id = "opt7" name = "question3" value="True" onclick="display5()">True<br>
-                              <input type="radio" id = "opt8" name = "question3" value="False" onclick="display6()"> False<br>
+                              <input type="radio" id = "opt7" name = "question3" value="True">True<br>
+                              <input type="radio" id = "opt8" name = "question3" value="False"> False<br>
+                              <input type="radio" id = "opt9" name = "question3" value="Maybe"> Maybe<br>
                             </form>
-                            <div class="alert alert-success" id = "op5">
-                                <a href="#" class="close" data-dismiss="alert">&times;</a>
-                                <strong>Correct:</strong><P>The answer is correct.</P>
-                              </div>
-                      <div class="alert alert-danger" id = "op6">
+                      <div class="alert alert-danger">
                             <a href="#" class="close" data-dismiss="alert">&times;</a>
                           <strong>Incorrect:</strong><p>Inorder to create a interactive webpage we may also need javascript to access a database.</p>
                       </div>
-                      <input id = "button" type = "button" id = "done" value = "I'm finished!" onclick = "check()">
+                      <input id = "button" type = "button" id = "opt11" value = "I'm finished!" onclick = "check();">
+                      <div id = "after_submit">
+                        <p id = "number_correct"></p>
+                        <p id = "message"></p>
+                        </div>
                       
 
         </div>
